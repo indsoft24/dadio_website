@@ -1,0 +1,9 @@
+node_modules
+dist
+.env
+*.zip
+heypal-api/vendor
+heypal-api/storage/*.key
+heypal-api/.env
+.vscode
+.DS_Store
