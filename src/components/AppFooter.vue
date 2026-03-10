@@ -5,7 +5,7 @@
         <router-link to="/" class="footer-logo">
           <img src="/logo.png" alt="HeyyPal" class="footer-logo-img" />
         </router-link>
-        <p class="tagline">The audio social network. Connect with experts, instantly.</p>
+        <p class="tagline">Connect with experts, instantly.</p>
       </div>
       <div class="footer-links">
         <div class="col">

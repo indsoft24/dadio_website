@@ -2,11 +2,12 @@
   <header class="header" :class="{ scrolled: scrolled }">
     <div class="header-inner">
       <router-link to="/" class="logo">
-        <img src="/logo.png" alt="HeyyPal - the audio social network" class="logo-img" />
+        <img src="/logo.png" alt="HeyyPal" class="logo-img" />
       </router-link>
-      <button class="nav-toggle" aria-label="Menu" @click="open = !open">
+      <button class="nav-toggle" aria-label="Menu" @click="open = !open" :class="{ active: open }">
         <span></span><span></span><span></span>
       </button>
+      <div class="nav-overlay" :class="{ active: open }" @click="open = false"></div>
       <nav class="nav" :class="{ open }">
         <router-link to="/" @click="open = false">Home</router-link>
         <router-link to="/about-us" @click="open = false">About us</router-link>
@@ -104,24 +105,84 @@ onUnmounted(() => window.removeEventListener('scroll', onScroll))
   height: 2px;
   background: currentColor;
   border-radius: 1px;
+  transition: transform 0.3s, opacity 0.3s;
+}
+.nav-toggle.active span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.nav-toggle.active span:nth-child(2) { opacity: 0; }
+.nav-toggle.active span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+.nav-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(8px);
+  z-index: 90;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+.nav-overlay.active {
+  opacity: 1;
+  pointer-events: auto;
 }
 @media (max-width: 768px) {
-  .nav-toggle { display: flex; }
+  .nav-toggle { display: flex; z-index: 102; }
   .nav {
     position: fixed;
     top: 0;
+    left: 0;
     right: 0;
     bottom: 0;
-    width: 280px;
-    background: #fff;
+    width: 100%;
+    height: 100vh;
+    background: rgba(255, 255, 255, 0.88);
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
+    display: flex;
     flex-direction: column;
-    padding: 6rem 2rem 2rem;
-    gap: 1.5rem;
-    transform: translateX(100%);
-    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-    box-shadow: -15px 0 40px rgba(0,0,0,0.1);
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    gap: 2rem;
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(1.1);
+    transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+    z-index: 101;
   }
-  .nav.open { transform: translateX(0); }
-  .nav a { font-size: 1.2rem; }
+  .nav.open { 
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+  }
+  .nav a { 
+    font-size: 1.5rem;
+    color: var(--text-primary);
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s;
+    text-align: center;
+    padding: 0.5rem 0;
+    width: auto;
+    border-bottom: none;
+  }
+  .nav a:hover {
+    color: var(--accent-blue);
+    transform: scale(1.1);
+  }
+  .nav .cta-nav { 
+    margin-top: 1rem;
+    padding: 1rem 2.5rem !important;
+    border-radius: 50px;
+    font-size: 1.25rem;
+    width: auto;
+    background: var(--gradient-brand);
+    color: #fff !important;
+    box-shadow: 0 10px 20px rgba(40, 55, 155, 0.2);
+    text-align: center;
+  }
 }
 </style>

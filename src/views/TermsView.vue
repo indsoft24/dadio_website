@@ -2,13 +2,13 @@
   <div class="page terms-page">
     <div class="container">
       <h1 class="page-title">HeyyPal Terms and Conditions of Use</h1>
-      <p class="intro">Welcome to HeyyPal, the world’s first audio social network. This Agreement sets out the legally binding terms for the use of the Site and the app (available on whichever platform) by you. This Agreement may be modified by HeyyPal from time to time. The membership and rights of admissions are reserved.</p>
+      <p class="intro">Welcome to HeyyPal, the next-generation platform for expert guidance. This Agreement sets out the legally binding terms for the use of the Site and the app (available on whichever platform) by you. This Agreement may be modified by HeyyPal from time to time. The membership and rights of admissions are reserved.</p>
       <p class="intro">The instant Terms of Use are published in accordance with the Rule 3 (1) of the Information Technology (Intermediaries Guidelines and Digital Media Ethics Code) Rules, 2021.</p>
       <p class="intro">These terms of use apply to your use of the website of HeyyPal, being “www.HeyyPal.com” (the “site” or the “website”) and HeyyPal mobile application (Android/ iOS application) (the “app”) by you (“the user” or “you”), provided by DTW Squad Pvt Ltd (“we” or “us” or “our” or “HeyyPal” or “company”). You are requested to go through the same since the users of the website and the app are bound by the terms of use set out below. If you have any objection to anything stipulated in the terms of use or our privacy policy, you are requested not to use the website or the app or any other service(s) offered by us.</p>
 
       <section class="terms-section">
         <h2>1. Services</h2>
-        <p>HeyyPal is an audio social network platform providing the following, amongst other, services (collectively referred to as the “<strong>services</strong>”):</p>
+        <p>HeyyPal is a platform providing the following, amongst other, services (collectively referred to as the “<strong>services</strong>”):</p>
         <ul>
           <li><strong>Audio Profiles</strong> – Every profile on HeyyPal app has an Audio introduction.</li>
           <li><strong>Text Messages</strong> – Users can send text messages to other users on the HeyyPal app.</li>

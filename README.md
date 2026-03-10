@@ -1,6 +1,6 @@
 # HeyyPal Landing Page
 
-A Vue.js 3 landing site for [HeyyPal](https://heyypal.com/) — the audio social network that connects users with verified experts (doctors, lawyers, therapists, mentors, and more) via instant app-to-app calling.
+A Vue.js 3 landing site for [HeyyPal](https://heyypal.com/) — a next-generation platform that connects users with verified experts (doctors, lawyers, therapists, mentors, and more) via instant app-to-app calling.
 
 ## Tech Stack
 

@@ -1,7 +1,10 @@
 <template>
   <div class="home">
     <section class="hero">
-      <img :src="heroImageUrl" alt="HeyyPal - All the Experts You Need, All in One Place" class="hero-img" />
+      <picture>
+        <source media="(max-width: 768px)" srcset="/images/mobilehey.jpeg" />
+        <img :src="heroImageUrl" alt="HeyyPal - All the Experts You Need, All in One Place" class="hero-img" />
+      </picture>
     </section>
 
     <section class="hero-info">
@@ -142,7 +145,7 @@ const heroImageUrl = '/images/' + encodeURIComponent(heroWallpaper)
 .hero-img {
   width: 100%;
   height: 100%;
-  object-fit: contain; /* Shows full image without crop */
+  object-fit: cover; /* Fills the area for a premium look */
 }
 
 .hero-info {
@@ -152,9 +155,12 @@ const heroImageUrl = '/images/' + encodeURIComponent(heroWallpaper)
 
 @media (max-width: 768px) {
   .hero {
-    aspect-ratio: auto;
+    aspect-ratio: 1 / 1; /* Match the square image ratio */
     height: auto;
-    min-height: 250px;
+    min-height: 300px;
+  }
+  .hero-img {
+    height: 100%;
   }
 }
 
