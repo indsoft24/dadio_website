@@ -3,9 +3,9 @@
     <div class="footer-inner">
       <div class="footer-brand">
         <router-link to="/" class="footer-logo">
-          <img src="/logo.png" alt="HeyyPal" class="footer-logo-img" />
+          <img src="/images/logo.jpeg" alt="Dadio" class="footer-logo-img" />
         </router-link>
-        <p class="tagline">Connect with experts, instantly.</p>
+        <p class="tagline">Connect with people, instantly.</p>
       </div>
       <div class="footer-nav-section">
         <!-- Desktop Nav (Visible in footer on desktop) -->
@@ -41,9 +41,9 @@
     <div class="footer-bottom">
       <p>© {{ new Date().getFullYear() }} DTW Squad Pvt. Ltd.</p>
       <div class="social">
-        <a href="https://facebook.com/heyypal" target="_blank" rel="noopener" aria-label="Facebook">Facebook</a>
-        <a href="https://twitter.com/heyypal" target="_blank" rel="noopener" aria-label="X">X</a>
-        <a href="https://instagram.com/heyypal" target="_blank" rel="noopener" aria-label="Instagram">Instagram</a>
+        <a href="https://facebook.com/dadio" target="_blank" rel="noopener" aria-label="Facebook">Facebook</a>
+        <a href="https://twitter.com/dadio" target="_blank" rel="noopener" aria-label="X">X</a>
+        <a href="https://instagram.com/dadio" target="_blank" rel="noopener" aria-label="Instagram">Instagram</a>
       </div>
     </div>
   </footer>

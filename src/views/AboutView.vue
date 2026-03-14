@@ -1,22 +1,22 @@
 <template>
   <div class="page about-page">
     <div class="container">
-      <h1 class="page-title">About HeyyPal</h1>
+      <h1 class="page-title">About Dadio</h1>
       <div class="content">
-        <p>HeyyPal is a next-generation platform designed to make expert guidance <strong>accessible</strong>, <strong>instant</strong>, and <strong>human</strong>. In a world where people often struggle to find the right advice at the right time, HeyyPal connects users directly with trusted professionals through seamless app-to-app calling.</p>
-        <p>Whether you need medical guidance, legal advice, financial consultation, emotional support, or life mentorship, HeyyPal brings a wide network of verified experts onto a single platform.</p>
-        <p>From doctors, lawyers, chartered accountants, astrologers, and nutritionists to clinical psychologists, therapists, and mentors — HeyyPal makes it easy to connect, talk, and get the guidance you need without the hassle of searching, scheduling long appointments, or visiting multiple platforms.</p>
-        <p class="mission">Our mission is simple: <em>to democratize access to expert knowledge and make meaningful conversations available to everyone, anytime and anywhere.</em></p>
-        <p>With HeyyPal, <strong>help is just a call away.</strong></p>
+        <p>Dadio is a next-generation platform designed to make dating and finding friends <strong>fun</strong>, <strong>instant</strong>, and <strong>human</strong>. In a world where people often struggle to find genuine connections, Dadio brings users directly together through seamless app-to-app calling so you can vibe before you meet.</p>
+        <p>Whether you are looking for romance, trying to make new friends, finding a sidekick, or just wanting people to hang out with, Dadio brings an extensive network of verified members onto a single platform.</p>
+        <p>From casual daters, serious relationship seekers, to just individuals looking to make friends across the globe — Dadio makes it easy to connect, talk, and build relationships without the hassle of endless swiping and silent messaging.</p>
+        <p class="mission">Our mission is simple: <em>to break barriers in socializing and make meaningful conversations available to everyone, anytime and anywhere.</em></p>
+        <p>With Dadio, <strong>your next great connection is just a call away.</strong></p>
 
-        <h2>What Makes HeyyPal Different</h2>
+        <h2>What Makes Dadio Different</h2>
         <ul class="diff-list">
-          <li><strong>One App, Multiple Experts</strong> – Access professionals from diverse fields in one place.</li>
-          <li><strong>Instant App-to-App Calling</strong> – Connect directly with experts in real time.</li>
-          <li><strong>Trusted & Verified Professionals</strong> – Speak with qualified experts you can rely on.</li>
-          <li><strong>Private & Convenient</strong> – Get advice from the comfort of your phone.</li>
+          <li><strong>Discover Matches</strong> – Find people who share your vibe and interests easily.</li>
+          <li><strong>Instant Face & Audio Calling</strong> – Connect directly with your matches in real time.</li>
+          <li><strong>Safe & Secure</strong> – Engage with authentic profiles you can trust.</li>
+          <li><strong>More Than Dating</strong> – Looking for a buddy? Make friends across the globe effortlessly.</li>
         </ul>
-        <p class="belief">At HeyyPal, we believe that the right conversation at the right moment can change lives.</p>
+        <p class="belief">At Dadio, we believe that the right conversation at the right moment can spark something beautiful.</p>
 
         <div class="cta-block">
           <router-link to="/contact-us" class="btn-primary">Join Waitlist</router-link>

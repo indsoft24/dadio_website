@@ -5,25 +5,25 @@ const routes = [
     path: '/',
     name: 'home',
     component: () => import('../views/HomeView.vue'),
-    meta: { title: 'HeyyPal - All the Experts You Need, All in One Place' }
+    meta: { title: 'Dadio - Find Friends, Love, and Meaningful Connections' }
   },
   {
     path: '/about-us',
     name: 'about',
     component: () => import('../views/AboutView.vue'),
-    meta: { title: 'About Us - HeyyPal' }
+    meta: { title: 'About Us - Dadio' }
   },
   {
     path: '/terms-of-use',
     name: 'terms',
     component: () => import('../views/TermsView.vue'),
-    meta: { title: 'Terms of Use - HeyyPal' }
+    meta: { title: 'Terms of Use - Dadio' }
   },
   {
     path: '/contact-us',
     name: 'contact',
     component: () => import('../views/ContactView.vue'),
-    meta: { title: 'Contact Us - HeyyPal' }
+    meta: { title: 'Contact Us - Dadio' }
   }
 ]
 
@@ -38,7 +38,7 @@ const router = createRouter({
 })
 
 router.beforeEach((to, from, next) => {
-  document.title = to.meta.title || 'HeyyPal - Audio Social Network'
+  document.title = to.meta.title || 'Dadio - Dating & Friend-Making App'
   next()
 })
 

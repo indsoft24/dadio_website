@@ -19,15 +19,15 @@ import AppFooter from './components/AppFooter.vue'
 
 <style>
 :root {
-  --bg-page: #f8fafc;
+  --bg-page: #fdf2f8; /* Soft pink background */
   --bg-card: #ffffff;
-  --primary-blue: #28379B;
-  --accent-blue: #009FE3;
-  --text-primary: #0f172a;
+  --primary-blue: #E11D48; /* Rose red */
+  --accent-blue: #F43F5E; /* Rose pink */
+  --text-primary: #1e1b4b; /* Dark indigo for high contrast text */
   --text-muted: #64748b;
-  --gradient-brand: linear-gradient(135deg, #28379B 0%, #009FE3 100%);
-  --glow-accent: 0 10px 15px -3px rgba(0, 159, 227, 0.2);
-  --border-color: #e2e8f0;
+  --gradient-brand: linear-gradient(135deg, #E11D48 0%, #F43F5E 100%);
+  --glow-accent: 0 10px 15px -3px rgba(225, 29, 72, 0.2);
+  --border-color: #fbcfe8; /* Light pink border */
 }
 
 * {

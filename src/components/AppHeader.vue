@@ -2,7 +2,7 @@
   <header class="header" :class="{ scrolled: scrolled }">
     <div class="header-inner">
       <router-link to="/" class="logo">
-        <img src="/logo.png" alt="HeyyPal" class="logo-img" />
+        <img src="/images/logo.jpeg" alt="Dadio" class="logo-img" />
       </router-link>
     </div>
   </header>

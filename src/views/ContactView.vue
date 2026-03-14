@@ -62,7 +62,7 @@
           <div class="info-card secondary">
             <h3>Quick Links</h3>
             <div class="vertical-links">
-              <router-link to="/about-us">About HeyyPal</router-link>
+              <router-link to="/about-us">About Dadio</router-link>
               <router-link to="/terms-of-use">Terms of Use</router-link>
             </div>
           </div>

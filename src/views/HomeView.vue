@@ -3,7 +3,7 @@
     <section class="hero">
       <picture>
         <source media="(max-width: 768px)" srcset="/images/mobilehey.jpeg" />
-        <img :src="heroImageUrl" alt="HeyyPal - All the Experts You Need, All in One Place" class="hero-img" />
+        <img :src="heroImageUrl" alt="Dadio - Find Friends, Love, and Meaningful Connections" class="hero-img" />
       </picture>
     </section>
 
@@ -22,26 +22,26 @@
           <div class="hero-flow">
             <span class="flow-item"><span class="flow-icon">📱</span> App</span>
             <span class="flow-arrow">→</span>
-            <span class="flow-item"><span class="flow-icon">📞</span> Connection</span>
+            <span class="flow-item"><span class="flow-icon">📞</span> Match</span>
             <span class="flow-arrow">→</span>
-            <span class="flow-item"><span class="flow-icon">✓</span> Expert</span>
+            <span class="flow-item"><span class="flow-icon">❤️</span> Connect</span>
           </div>
         </div>
-        <p class="intro-lead">HeyyPal is a next-generation platform designed to make expert guidance <strong>accessible</strong>, <strong>instant</strong>, and <strong>human</strong>.</p>
+        <p class="intro-lead">Dadio is the ultimate platform designed to make dating and finding friends <strong>fun</strong>, <strong>instant</strong>, and <strong>meaningful</strong>.</p>
         <div class="intro-grid">
-          <p class="intro-text">In a world where people often struggle to find the right advice at the right time, HeyyPal connects users directly with trusted professionals through seamless app-to-app calling.</p>
-          <p class="intro-text">Whether you need medical guidance, legal advice, financial consultation, emotional support, or life mentorship, HeyyPal brings a wide network of verified experts onto a single platform.</p>
+          <p class="intro-text">In a modern world where making genuine connections can be tough, Dadio brings people together directly through seamless app-to-app audio calling, making it easier than ever to talk and vibe.</p>
+          <p class="intro-text">Whether you are looking for true love, trying to make new friends, or just wanting to enjoy great conversations, Dadio provides a safe and dynamic platform for you to meet the right people.</p>
         </div>
-        <p class="intro-mission">Our mission is simple: <em>to democratize access to expert knowledge and make meaningful conversations available to everyone, anytime and anywhere.</em></p>
-        <p class="intro-cta">With HeyyPal, <strong>help is just a call away.</strong></p>
+        <p class="intro-mission">Our mission is simple: <em>to break barriers in socializing and help you build meaningful relationships with people who share your interests, anytime and anywhere.</em></p>
+        <p class="intro-cta">With Dadio, <strong>your next great connection is just a call away.</strong></p>
       </div>
     </section>
 
     <section class="experts" id="experts">
       <div class="container">
         <div class="section-header">
-          <h2 class="section-title">Meet Our Experts</h2>
-          <p class="section-sub">One app, multiple experts. Connect with verified professionals across diverse fields.</p>
+          <h2 class="section-title">Meet Interesting People</h2>
+          <p class="section-sub">One app, endless possibilities. Connect with amazing people and find your perfect match or a great friend.</p>
         </div>
         <div class="experts-grid">
           <div v-for="(expert, i) in expertImages" :key="i" class="expert-card">
@@ -53,37 +53,37 @@
           </div>
         </div>
         <div class="text-center">
-          <router-link to="/contact-us" class="btn btn-primary btn-large">Explore All Experts</router-link>
+          <router-link to="/contact-us" class="btn btn-primary btn-large">Start Matching Now</router-link>
         </div>
       </div>
     </section>
 
     <section class="different" id="different">
       <div class="container">
-        <h2 class="section-title text-center">What Makes HeyyPal Different</h2>
+        <h2 class="section-title text-center">What Makes Dadio Different</h2>
         <div class="different-grid">
           <div class="diff-card">
-            <div class="diff-icon">📱</div>
-            <h3>One App, Multiple Experts</h3>
-            <p>Access professionals from diverse fields in one place.</p>
+            <div class="diff-icon">💞</div>
+            <h3>Discover Matches</h3>
+            <p>Find people who share your vibe and interests easily.</p>
           </div>
           <div class="diff-card">
             <div class="diff-icon">⚡</div>
-            <h3>Instant App-to-App Calling</h3>
-            <p>Connect directly with experts in real time.</p>
+            <h3>Instant Face & Audio Calls</h3>
+            <p>Connect directly with your matches in real time.</p>
           </div>
           <div class="diff-card">
-            <div class="diff-icon">✓</div>
-            <h3>Trusted & Verified Professionals</h3>
-            <p>Speak with qualified experts you can rely on.</p>
+            <div class="diff-icon">🛡️</div>
+            <h3>Safe & Secure</h3>
+            <p>Engage with authentic profiles you can trust.</p>
           </div>
           <div class="diff-card">
-            <div class="diff-icon">🔒</div>
-            <h3>Private & Convenient</h3>
-            <p>Get advice from the comfort of your phone.</p>
+            <div class="diff-icon">👋</div>
+            <h3>More Than Dating</h3>
+            <p>Looking for a buddy? Make friends across the globe effortlessly.</p>
           </div>
         </div>
-        <p class="different-belief">At HeyyPal, we believe that <strong>the right conversation at the right moment can change lives.</strong></p>
+        <p class="different-belief">At Dadio, we believe that <strong>the right conversation at the right moment can spark something beautiful.</strong></p>
       </div>
     </section>
 
@@ -93,18 +93,18 @@
         <div class="steps">
           <div class="step">
             <span class="step-num">1</span>
-            <h3>Download HeyyPal</h3>
-            <p>Get the app and create your profile.</p>
+            <h3>Download Dadio</h3>
+            <p>Get the app and create your glowing profile.</p>
           </div>
           <div class="step">
             <span class="step-num">2</span>
-            <h3>Choose an Expert</h3>
-            <p>Browse doctors, lawyers, therapists, mentors and more.</p>
+            <h3>Find Your Match</h3>
+            <p>Browse through interesting people and swipe or wave.</p>
           </div>
           <div class="step">
             <span class="step-num">3</span>
-            <h3>Connect Instantly</h3>
-            <p>App-to-app audio call — no sharing your number.</p>
+            <h3>Call Instantly</h3>
+            <p>App-to-app call functionality — safe, instant, and fun.</p>
           </div>
         </div>
       </div>
@@ -112,8 +112,8 @@
 
     <section class="cta-section">
       <div class="container">
-        <h2 class="cta-title">Get Access. All the Experts, Right Here.</h2>
-        <p class="cta-sub">HeyyPal audio connections. Instant, expert calls. Via app-to-app.</p>
+        <h2 class="cta-title">Find Your Next Great Connection.</h2>
+        <p class="cta-sub">Dadio makes meeting people fun and instant. Call, text, and hang out directly through the app.</p>
         <router-link to="/contact-us" class="btn btn-primary btn-large btn-glow">Join the Waitlist Now</router-link>
       </div>
     </section>
