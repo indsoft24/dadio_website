@@ -19,15 +19,15 @@ import AppFooter from './components/AppFooter.vue'
 
 <style>
 :root {
-  --bg-page: #fdf2f8; /* Soft pink background */
+  --bg-page: #f8fafc; /* Clean gray/white */
   --bg-card: #ffffff;
-  --primary-blue: #E11D48; /* Rose red */
-  --accent-blue: #F43F5E; /* Rose pink */
-  --text-primary: #1e1b4b; /* Dark indigo for high contrast text */
+  --primary-blue: #00AEEF; /* Dadio logo cyan */
+  --accent-blue: #E11D48; /* Red for dating app elements */
+  --text-primary: #1e293b;
   --text-muted: #64748b;
-  --gradient-brand: linear-gradient(135deg, #E11D48 0%, #F43F5E 100%);
-  --glow-accent: 0 10px 15px -3px rgba(225, 29, 72, 0.2);
-  --border-color: #fbcfe8; /* Light pink border */
+  --gradient-brand: linear-gradient(135deg, #E11D48 0%, #FF3B30 100%); /* Vibrant red gradient for CTA */
+  --glow-accent: 0 10px 15px -3px rgba(225, 29, 72, 0.3);
+  --border-color: #e2e8f0;
 }
 
 * {

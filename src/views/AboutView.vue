@@ -74,10 +74,10 @@
   font-weight: 600;
   border-radius: 12px;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 12px rgba(40, 55, 155, 0.15);
+  box-shadow: var(--glow-accent);
 }
 .btn-primary:hover {
   transform: translateY(-3px);
-  box-shadow: 0 8px 20px rgba(40, 55, 155, 0.25);
+  box-shadow: 0 8px 20px rgba(225, 29, 72, 0.3);
 }
 </style>

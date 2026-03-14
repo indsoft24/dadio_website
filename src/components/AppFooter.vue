@@ -87,7 +87,7 @@
   color: #fff !important;
   border-radius: 12px;
   font-weight: 600;
-  box-shadow: 0 4px 12px rgba(40, 55, 155, 0.15);
+  box-shadow: var(--glow-accent);
 }
 
 .footer-bottom {

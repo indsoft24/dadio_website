@@ -134,23 +134,27 @@ const heroImageUrl = '/images/' + encodeURIComponent(heroWallpaper)
 .hero {
   position: relative;
   width: 100%;
-  aspect-ratio: 1900 / 600;
-  max-height: 600px;
+  height: 65vh;
+  min-height: 450px;
+  max-height: 700px;
   overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #fff;
+  background: var(--bg-page);
+}
+.hero picture {
+  width: 100%;
+  height: 100%;
+  display: block;
 }
 .hero-img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Fills the area for a premium look */
+  object-fit: cover;
+  object-position: center;
 }
 
 .hero-info {
-  padding: 2rem 0 0.5rem;
-  background: #fff;
+  padding: 2.5rem 0 1.5rem;
+  background: var(--bg-page);
 }
 
 @media (max-width: 768px) {
@@ -158,12 +162,8 @@ const heroImageUrl = '/images/' + encodeURIComponent(heroWallpaper)
     padding-bottom: 70px; /* Space for the bottom navigation bar */
   }
   .hero {
-    aspect-ratio: 1 / 1; /* Match the square image ratio */
-    height: auto;
-    min-height: 300px;
-  }
-  .hero-img {
-    height: 100%;
+    height: 50vh;
+    min-height: 350px;
   }
 }
 
@@ -186,11 +186,11 @@ const heroImageUrl = '/images/' + encodeURIComponent(heroWallpaper)
   background: var(--gradient-brand);
   color: #fff;
   border: none;
-  box-shadow: 0 4px 15px rgba(40, 55, 155, 0.2);
+  box-shadow: var(--glow-accent);
 }
 .btn-primary:hover {
   transform: translateY(-3px);
-  box-shadow: 0 8px 25px rgba(40, 55, 155, 0.3);
+  box-shadow: 0 8px 25px rgba(225, 29, 72, 0.4);
 }
 .btn-ghost {
   border: 2px solid var(--primary-blue);
@@ -232,7 +232,7 @@ const heroImageUrl = '/images/' + encodeURIComponent(heroWallpaper)
 .flow-icon { font-size: 1.2rem; }
 .flow-arrow { color: var(--accent-blue); font-weight: 800; }
 
-.intro { padding: 3.5rem 0; background: #fff; }
+.intro { padding: 3.5rem 0; background: var(--bg-page); }
 .intro-lead { font-size: 1.35rem; margin-bottom: 2rem; color: var(--primary-blue); font-weight: 600; max-width: 850px; margin-inline: auto; }
 .intro-grid {
   display: grid;
@@ -307,7 +307,7 @@ const heroImageUrl = '/images/' + encodeURIComponent(heroWallpaper)
 .expert-name { font-size: 1.1rem; font-weight: 700; margin-bottom: 0.35rem; color: var(--primary-blue); }
 .expert-tagline { font-size: 0.9rem; color: var(--text-muted); font-weight: 500; }
 
-.different { padding: 4rem 0; background: #fff; }
+.different { padding: 4rem 0; background: var(--bg-card); }
 .different-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -323,7 +323,7 @@ const heroImageUrl = '/images/' + encodeURIComponent(heroWallpaper)
 }
 .diff-card:hover {
   border-color: var(--accent-blue);
-  background: #fff;
+  background: var(--bg-card);
   box-shadow: var(--glow-accent);
 }
 .diff-icon { font-size: 2.25rem; margin-bottom: 1rem; }
@@ -361,7 +361,7 @@ const heroImageUrl = '/images/' + encodeURIComponent(heroWallpaper)
   font-size: 1.35rem;
   border-radius: 16px;
   margin-bottom: 1.25rem;
-  box-shadow: 0 4px 10px rgba(40, 55, 155, 0.15);
+  box-shadow: var(--glow-accent);
 }
 .step h3 { font-size: 1.25rem; margin-bottom: 0.75rem; color: var(--primary-blue); }
 .step p { color: var(--text-muted); font-size: 1rem; line-height: 1.6; }

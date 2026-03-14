@@ -178,7 +178,7 @@ const handleSubmit = async () => {
 .form-group textarea:focus {
   outline: none;
   border-color: var(--accent-blue);
-  box-shadow: 0 0 0 3px rgba(0, 159, 227, 0.1);
+  box-shadow: 0 0 0 3px rgba(225, 29, 72, 0.1);
   background: #fff;
 }
 
@@ -197,7 +197,7 @@ const handleSubmit = async () => {
 
 .btn-primary:hover:not(:disabled) {
   transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(40, 55, 155, 0.2);
+  box-shadow: 0 8px 20px rgba(225, 29, 72, 0.3);
 }
 
 .btn-primary:disabled {
