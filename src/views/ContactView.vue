@@ -92,7 +92,7 @@ const handleSubmit = async () => {
   
   try {
     // API Call to Laravel Backend (Production)
-    const response = await fetch('https://heyypal.com/api-backend/public/api/send-email', {
+    const response = await fetch('https://dadio.app/api-backend/public/api/send-email', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(formData)
