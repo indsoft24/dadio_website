@@ -7,21 +7,36 @@
         </router-link>
         <p class="tagline">Connect with experts, instantly.</p>
       </div>
-      <div class="footer-links">
-        <div class="col">
-          <h4>Company</h4>
+      <div class="footer-nav-section">
+        <!-- Desktop Nav (Visible in footer on desktop) -->
+        <nav class="footer-nav-desktop">
+          <router-link to="/">Home</router-link>
           <router-link to="/about-us">About us</router-link>
-          <router-link to="/contact-us">Contact us</router-link>
-        </div>
-        <div class="col">
-          <h4>Legal</h4>
           <router-link to="/terms-of-use">Terms of Use</router-link>
-          <router-link to="/contact-us">Privacy & contact</router-link>
-        </div>
+          <router-link to="/contact-us">Contact us</router-link>
+          <router-link to="/contact-us" class="cta-footer">Register Now</router-link>
+        </nav>
       </div>
-      <div class="footer-cta">
-        <router-link to="/contact-us" class="btn-join">Join Waitlist</router-link>
-      </div>
+
+      <!-- Mobile Bottom Navigation (Professional App View) - Always accessible on mobile -->
+      <nav class="mobile-bottom-nav">
+        <router-link to="/" class="nav-item">
+          <span class="nav-icon">🏠</span>
+          <span class="nav-label">Home</span>
+        </router-link>
+        <router-link to="/about-us" class="nav-item">
+          <span class="nav-icon">ℹ️</span>
+          <span class="nav-label">About</span>
+        </router-link>
+        <router-link to="/contact-us" class="nav-item">
+          <span class="nav-icon">📲</span>
+          <span class="nav-label">Register</span>
+        </router-link>
+        <router-link to="/terms-of-use" class="nav-item">
+          <span class="nav-icon">📜</span>
+          <span class="nav-label">Terms</span>
+        </router-link>
+      </nav>
     </div>
     <div class="footer-bottom">
       <p>© {{ new Date().getFullYear() }} DTW Squad Pvt. Ltd.</p>
@@ -45,66 +60,38 @@
   margin-top: auto;
 }
 .footer-inner {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr auto auto;
-  gap: 4rem;
-  align-items: start;
-}
-.footer-logo {
-  display: block;
-  line-height: 0;
-}
-.footer-logo-img {
-  height: 48px;
-  width: auto;
-  object-fit: contain;
-}
-.tagline {
-  color: var(--text-muted);
-  font-size: 1rem;
-  margin-top: 1rem;
-  max-width: 320px;
-  font-weight: 500;
-}
-.footer-links { display: flex; gap: 4rem; }
-.footer-links h4 {
-  font-size: 0.9rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  color: var(--primary-blue);
-  margin-bottom: 1.25rem;
-}
-.footer-links .col {
   display: flex;
-  flex-direction: column;
-  gap: 0.75rem;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
 }
-.footer-links a {
+.footer-nav-desktop {
+  display: flex;
+  gap: 2.5rem;
+  align-items: center;
+}
+.footer-nav-desktop a {
   color: var(--text-muted);
-  font-size: 1rem;
   font-weight: 500;
+  font-size: 1rem;
   transition: color 0.2s;
 }
-.footer-links a:hover { color: var(--accent-blue); }
-.btn-join {
-  display: inline-block;
-  padding: 0.85rem 1.75rem;
+.footer-nav-desktop a:hover {
+  color: var(--accent-blue);
+}
+.cta-footer {
+  padding: 0.75rem 1.5rem;
   background: var(--gradient-brand);
-  color: #fff;
-  font-weight: 600;
+  color: #fff !important;
   border-radius: 12px;
-  transition: all 0.3s ease;
+  font-weight: 600;
   box-shadow: 0 4px 12px rgba(40, 55, 155, 0.15);
 }
-.btn-join:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 8px 20px rgba(40, 55, 155, 0.25);
-}
+
 .footer-bottom {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 2.5rem auto 0;
   padding-top: 2rem;
   border-top: 1px solid var(--border-color);
@@ -123,15 +110,64 @@
   transition: color 0.2s;
 }
 .social a:hover { color: var(--accent-blue); }
+
+/* Mobile Bottom Nav Styles */
+.mobile-bottom-nav {
+  display: none;
+}
+
 @media (max-width: 768px) {
-  .footer-inner {
-    grid-template-columns: 1fr;
-    text-align: center;
-    gap: 3rem;
+  .footer {
+    padding: 3rem 1.5rem 6.5rem; /* Space for the bottom nav */
   }
-  .footer-brand { display: flex; flex-direction: column; align-items: center; }
-  .tagline { max-width: none; }
-  .footer-links { justify-content: center; gap: 3rem; }
-  .footer-bottom { flex-direction: column; text-align: center; }
+  .footer-inner {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2.5rem;
+  }
+  .footer-nav-desktop {
+    display: none;
+  }
+  .mobile-bottom-nav {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+    padding: 0.75rem 0.5rem;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 1000;
+    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.05);
+  }
+  .nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #64748b;
+    gap: 4px;
+    flex: 1;
+    transition: all 0.2s;
+  }
+  .nav-item.router-link-active {
+    color: var(--accent-blue);
+  }
+  .nav-icon {
+    font-size: 1.5rem;
+  }
+  .nav-label {
+    font-size: 0.75rem;
+    font-weight: 600;
+  }
+  .footer-bottom { 
+    flex-direction: column; 
+    text-align: center;
+  }
 }
 </style>

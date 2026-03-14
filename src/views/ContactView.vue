@@ -118,7 +118,7 @@ const handleSubmit = async () => {
 
 <style scoped>
 .contact-page { padding: 6rem 0 3rem; background: var(--bg-page); }
-.container { max-width: 1000px; margin: 0 auto; padding: 0 1.5rem; }
+.container { max-width: 1200px; margin: 0 auto; padding: 0 1.5rem; }
 
 .page-title {
   font-size: 2.5rem;

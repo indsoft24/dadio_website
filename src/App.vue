@@ -38,6 +38,13 @@ import AppFooter from './components/AppFooter.vue'
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 body {
@@ -46,6 +53,7 @@ body {
   color: var(--text-primary);
   line-height: 1.6;
   overflow-x: hidden;
+  width: 100%;
 }
 
 .app {

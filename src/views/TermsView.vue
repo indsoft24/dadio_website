@@ -72,7 +72,7 @@
 
 <style scoped>
 .terms-page { padding: 7rem 0 3rem; }
-.container { max-width: 800px; margin: 0 auto; padding: 0 1.5rem; }
+.container { max-width: 900px; margin: 0 auto; padding: 0 1.5rem; }
 .page-title {
   font-size: 2rem;
   font-weight: 800;

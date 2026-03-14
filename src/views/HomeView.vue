@@ -128,7 +128,7 @@ const heroImageUrl = '/images/' + encodeURIComponent(heroWallpaper)
 
 <style scoped>
 .home { padding-top: 80px; }
-.container { max-width: 1200px; margin: 0 auto; padding: 0 1.5rem; }
+.container { max-width: 1400px; margin: 0 auto; padding: 0 1.5rem; }
 .text-center { text-align: center; }
 
 .hero {
@@ -154,6 +154,9 @@ const heroImageUrl = '/images/' + encodeURIComponent(heroWallpaper)
 }
 
 @media (max-width: 768px) {
+  .home {
+    padding-bottom: 70px; /* Space for the bottom navigation bar */
+  }
   .hero {
     aspect-ratio: 1 / 1; /* Match the square image ratio */
     height: auto;
