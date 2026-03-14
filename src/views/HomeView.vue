@@ -1,7 +1,10 @@
 <template>
   <div class="home">
     <section class="hero">
-      <img :src="heroImageUrl" alt="Dadio - Find Friends, Love, and Meaningful Connections" class="hero-img" />
+      <!-- Blurred background to fill edges smoothly -->
+      <img :src="heroImageUrl" alt="" class="hero-img-bg" aria-hidden="true" />
+      <!-- Main un-cropped image -->
+      <img :src="heroImageUrl" alt="Dadio - Find Friends, Love, and Meaningful Connections" class="hero-img-main" />
     </section>
 
     <section class="hero-info">
@@ -136,12 +139,31 @@ const heroImageUrl = '/images/' + encodeURIComponent(heroWallpaper)
   max-height: 700px;
   overflow: hidden;
   background: var(--bg-page);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.hero-img {
-  width: 100%;
-  height: 100%;
+.hero-img-bg {
+  position: absolute;
+  top: -10%;
+  left: -10%;
+  width: 120%;
+  height: 120%;
   object-fit: cover;
+  filter: blur(15px);
+  opacity: 0.8;
+  z-index: 1;
+}
+.hero-img-main {
+  position: relative;
+  z-index: 2;
+  width: auto;
+  height: 100%;
+  max-width: 100%;
+  object-fit: contain;
   object-position: center;
+  /* Optional: gives the main image a subtle border/shadow to separate from blur */
+  border-radius: 4px; 
 }
 
 .hero-info {
