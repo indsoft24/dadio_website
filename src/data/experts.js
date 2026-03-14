@@ -23,4 +23,4 @@ export function expertImageUrl(fileName) {
   return '/images/' + encodeURIComponent(fileName)
 }
 
-export const heroWallpaper = 'logo.jpeg'
+export const heroWallpaper = 'dadio_hero.png'

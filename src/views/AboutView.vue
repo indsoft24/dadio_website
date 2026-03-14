@@ -19,7 +19,7 @@
         <p class="belief">At Dadio, we believe that the right conversation at the right moment can spark something beautiful.</p>
 
         <div class="cta-block">
-          <router-link to="/contact-us" class="btn-primary">Join Waitlist</router-link>
+          <a href="https://play.google.com/store/apps/details?id=com.dadio.app" target="_blank" rel="noopener" class="btn-primary">Download Dadio App</a>
         </div>
       </div>
     </div>

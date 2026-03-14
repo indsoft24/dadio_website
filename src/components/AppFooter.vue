@@ -14,7 +14,7 @@
           <router-link to="/about-us">About us</router-link>
           <router-link to="/terms-of-use">Terms of Use</router-link>
           <router-link to="/contact-us">Contact us</router-link>
-          <router-link to="/contact-us" class="cta-footer">Register Now</router-link>
+          <a href="https://play.google.com/store/apps/details?id=com.dadio.app" target="_blank" rel="noopener" class="cta-footer">Download App</a>
         </nav>
       </div>
 
@@ -28,10 +28,10 @@
           <span class="nav-icon">ℹ️</span>
           <span class="nav-label">About</span>
         </router-link>
-        <router-link to="/contact-us" class="nav-item">
+        <a href="https://play.google.com/store/apps/details?id=com.dadio.app" target="_blank" rel="noopener" class="nav-item">
           <span class="nav-icon">📲</span>
-          <span class="nav-label">Register</span>
-        </router-link>
+          <span class="nav-label">Download</span>
+        </a>
         <router-link to="/terms-of-use" class="nav-item">
           <span class="nav-icon">📜</span>
           <span class="nav-label">Terms</span>
@@ -169,5 +169,11 @@
     flex-direction: column; 
     text-align: center;
   }
+}
+
+.footer-logo-img {
+  max-width: 150px;
+  height: auto;
+  object-fit: contain;
 }
 </style>

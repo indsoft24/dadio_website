@@ -10,7 +10,7 @@
     <section class="hero-info">
       <div class="container text-center">
         <div class="hero-cta">
-          <router-link to="/contact-us" class="btn btn-primary">Join Waitlist</router-link>
+          <a href="https://play.google.com/store/apps/details?id=com.dadio.app" target="_blank" rel="noopener" class="btn btn-primary">Download App</a>
           <a href="#how-it-works" class="btn btn-ghost">How it works</a>
         </div>
       </div>
@@ -114,7 +114,7 @@
       <div class="container">
         <h2 class="cta-title">Find Your Next Great Connection.</h2>
         <p class="cta-sub">Dadio makes meeting people fun and instant. Call, text, and hang out directly through the app.</p>
-        <router-link to="/contact-us" class="btn btn-primary btn-large btn-glow">Join the Waitlist Now</router-link>
+        <a href="https://play.google.com/store/apps/details?id=com.dadio.app" target="_blank" rel="noopener" class="btn btn-primary btn-large btn-glow">Get the App Now</a>
       </div>
     </section>
   </div>
