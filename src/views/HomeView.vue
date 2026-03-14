@@ -1,10 +1,11 @@
 <template>
   <div class="home">
     <section class="hero">
-      <picture>
-        <source media="(max-width: 768px)" srcset="/images/mobilehey.jpeg" />
-        <img :src="heroImageUrl" alt="Dadio - Find Friends, Love, and Meaningful Connections" class="hero-img" />
-      </picture>
+      <img :src="heroImageUrl" alt="Dadio - Find Friends, Love, and Meaningful Connections" class="hero-img" />
+      <div class="hero-overlay">
+        <img src="/images/logo.jpeg" alt="Dadio" class="hero-logo-overlay" />
+        <p class="hero-overlay-text">Match, Connect & Chat</p>
+      </div>
     </section>
 
     <section class="hero-info">
@@ -140,16 +141,38 @@ const heroImageUrl = '/images/' + encodeURIComponent(heroWallpaper)
   overflow: hidden;
   background: var(--bg-page);
 }
-.hero picture {
-  width: 100%;
-  height: 100%;
-  display: block;
-}
 .hero-img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: center;
+}
+.hero-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.85);
+  padding: 1.5rem 2.5rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(10px);
+}
+.hero-logo-overlay {
+  max-width: 180px;
+  height: auto;
+  margin-bottom: 0.5rem;
+}
+.hero-overlay-text {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--primary-blue);
+  letter-spacing: 0.5px;
 }
 
 .hero-info {
