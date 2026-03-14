@@ -41,9 +41,8 @@
     <div class="footer-bottom">
       <p>© {{ new Date().getFullYear() }} DTW Squad Pvt. Ltd.</p>
       <div class="social">
-        <a href="https://facebook.com/dadio" target="_blank" rel="noopener" aria-label="Facebook">Facebook</a>
+        <a href="https://www.facebook.com/dadioapp/" target="_blank" rel="noopener" aria-label="Facebook">Facebook</a>
         <a href="https://twitter.com/dadio" target="_blank" rel="noopener" aria-label="X">X</a>
-        <a href="https://instagram.com/dadio" target="_blank" rel="noopener" aria-label="Instagram">Instagram</a>
       </div>
     </div>
   </footer>
